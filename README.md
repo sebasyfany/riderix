@@ -1,0 +1,2 @@
+# riderix
+Practica 6
