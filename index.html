@@ -1,0 +1,138 @@
+<section id="inicio" class="contenido seccion activa">
+    <h2>Yamaha MT10</h2>
+    <p>Motocicleta deportiva de alto rendimiento diseñada para la velocidad.</p>
+
+    <!-- 🔥 IMAGEN AGREGADA -->
+    <img src="mt10_inicio.jpg" class="img-fluida">
+
+    <h3>Características</h3>
+    <ul>
+        <li>Motor 998cc</li>
+        <li>Control de tracción</li>
+        <li>Frenos ABS</li>
+        <li>Diseño aerodinámico</li>
+    </ul>
+
+    <h3>Misión</h3>
+    <p>Ofrecer motocicletas innovadoras que combinen velocidad, seguridad y estilo.</p>
+</section>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIDERIX - MT10</title>
+    <link rel="stylesheet" href="reglas.css">
+
+    <style>
+        /* ocultar secciones */
+        .seccion {
+            display: none;
+        }
+
+        .activa {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <h1>RIDERIX</h1>
+    <p>Potencia, velocidad y diseño en cada MT10</p>
+</header>
+
+<nav class="navbar">
+    <ul class="menu">
+        <li><a href="#" onclick="mostrar('inicio')">Inicio</a></li>
+        <li><a href="#" onclick="mostrar('productos')">Productos</a></li>
+        <li><a href="#" onclick="mostrar('contacto')">Contacto</a></li>
+    </ul>
+</nav>
+
+<main class="contenedor-principal">
+
+    <!-- 🔥 INICIO -->
+    <section id="inicio" class="contenido seccion activa">
+        <h2>Yamaha MT10</h2>
+        <p>Motocicleta deportiva de alto rendimiento diseñada para la velocidad.</p>
+
+        <h3>Características</h3>
+        <ul>
+            <li>Motor 998cc</li>
+            <li>Control de tracción</li>
+            <li>Frenos ABS</li>
+            <li>Diseño aerodinámico</li>
+        </ul>
+
+        <h3>Misión</h3>
+        <p>Ofrecer motocicletas innovadoras que combinen velocidad, seguridad y estilo.</p>
+    </section>
+
+    <!-- 🏍️ PRODUCTOS -->
+    <section id="productos" class="contenido seccion">
+        <h2>Galería MT10</h2>
+
+        <img src="mt10_1.jpg" class="img-fluida">
+        <img src="mt10_2.jpg" class="img-fluida">
+        <img src="mt10_3.jpg" class="img-fluida">
+        <img src="mt10_4.jpg" class="img-fluida">
+        <img src="mt10_5.jpg" class="img-fluida">
+
+        <video class="video" controls>
+            <source src="mt10.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- 📩 CONTACTO -->
+    <section id="contacto" class="contenido seccion">
+        <h2>Solicitud de Compra</h2>
+
+        <form>
+            <label>Nombre:</label><br>
+            <input type="text" required><br><br>
+
+            <label>Correo:</label><br>
+            <input type="email" required><br><br>
+
+            <label>Teléfono:</label><br>
+            <input type="tel" required><br><br>
+
+            <label>Modelo:</label><br>
+            <select>
+                <option>MT10</option>
+                <option>MT10 SP</option>
+            </select><br><br>
+
+            <label>Mensaje:</label><br>
+            <textarea rows="4"></textarea><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- LATERAL -->
+    <aside class="lateral">
+        <h3>🔥 Noticias</h3>
+        <p>Nueva MT10 2026 disponible.</p>
+    </aside>
+
+</main>
+
+<footer class="pie">
+    <p>&copy; 2026 RIDERIX</p>
+</footer>
+
+<!-- 🔥 SCRIPT -->
+<script>
+function mostrar(seccion) {
+    let secciones = document.querySelectorAll('.seccion');
+    secciones.forEach(s => s.classList.remove('activa'));
+
+    document.getElementById(seccion).classList.add('activa');
+}
+</script>
+
+</body>
+</html>
